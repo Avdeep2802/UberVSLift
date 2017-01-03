@@ -1,0 +1,24 @@
+<form method="post" action="/logout">
+<nav id="nav">
+  <div class="nav-wrapper">
+    <a class="brand-logo center">UBER v/s LYFT</a>
+<ul class="topnav" id="myTopnav">
+  <li><a href="/">Home</a></li>
+  <li><a href="/">Refresh</a></li>
+  <li><a onclick="logout()" >Logout</a></li>
+
+  <script type="text/javascript">
+            function logout(){
+                $.post( "/logout");
+                location.reload();
+            }
+
+  </script>
+</ul>
+  </div>
+</nav>
+</form>
+
+
+</br>
+
